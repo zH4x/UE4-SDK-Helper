@@ -6,8 +6,18 @@ namespace SDK
 {
 	class EngineService
 	{
+	private:
+		UGameViewportClient* gameViewportClient = nullptr;
+		UFont * defaultFont = nullptr;
 	public:
-		EngineService();
+		EngineService() = default;
+		EngineService(UGameViewportClient* uGameViewportClient);
+		EngineService(UGameViewportClient* uGameViewportClient, UFont * defaultFont);
+
+		UGameViewportClient* GetGameViewportClient() const;
+		UFont* GetDefaultFont() const;
+		const ULocalPlayer* GetLocalPlayer() const;
+		APlayerController* GetPlayerController() const;
 	};
 }
 
