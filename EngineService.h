@@ -16,6 +16,7 @@ namespace SDK
 
 		UGameViewportClient* GetGameViewportClient() const;
 		UFont* GetDefaultFont() const;
+		UWorld* GetWorld() const;
 		const ULocalPlayer* GetLocalPlayer() const;
 		APlayerController* GetPlayerController() const;
 	};

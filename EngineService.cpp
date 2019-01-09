@@ -23,6 +23,12 @@ namespace SDK
 		return gameViewportClient;
 	}
 
+
+	UWorld* EngineService::GetWorld() const
+	{
+		return GetGameViewportClient()->World;
+	}
+
 	const ULocalPlayer* EngineService::GetLocalPlayer() const
 	{
 		if(GetGameViewportClient() && GetGameViewportClient()->GameInstance && GetGameViewportClient()->GameInstance->LocalPlayers.Num() > 0)
