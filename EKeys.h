@@ -1,6 +1,6 @@
 #pragma once
 
-#include "SoT_InputCore_structs.hpp"
+#include "SDK.hpp"
 
 namespace SDK
 {
