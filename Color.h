@@ -14,7 +14,7 @@ namespace SDK
 
 	static const FLinearColor DarkGray(.66f, .66f, .66f);
 	static const FLinearColor Gray(0.5f, 0.5f, 0.5f, 1.f);
-	static const FLinearColor Black(0.2f, 0.2f, 0.2f, 1.f);		
+	static const FLinearColor Black(0, 0, 0, 1.f);		
 
 	static const FLinearColor DarkRed(.5f, 0, 0, 1.f);
 	static const FLinearColor Red(1.f, 0, 0, 1.f);
