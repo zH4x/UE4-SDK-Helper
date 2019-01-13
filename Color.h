@@ -33,6 +33,7 @@ namespace SDK
 	static const FLinearColor DarkCyan(.0f, .55f, .55f);
 	static const FLinearColor Cyan(.0f, 1.f, 1.f);
 	static const FLinearColor DeepSkyBlue(.0f, .75f, 1.f);
+	static const FLinearColor LightSkyBlue(.53f, .81f, .98f);
 	static const FLinearColor DarkBlue(0, 0, .5f);
 	static const FLinearColor Blue(0, 0, 1.f);
 	static const FLinearColor CadetBlue(.37f, .62f, .63f);
