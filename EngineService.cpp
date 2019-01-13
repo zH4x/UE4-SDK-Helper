@@ -2,27 +2,40 @@
 
 namespace SDK
 {
-	EngineService::EngineService(UGameViewportClient* uGameViewportClient) : EngineService()
+	EngineService::EngineService(UGameEngine* uGameEngine) : EngineService()
 	{
-		this->gameViewportClient = uGameViewportClient;
+		this->gameEngine = uGameEngine;
 	}
 
 
-	EngineService::EngineService(UGameViewportClient* uGameViewportClient, UFont* defaultFont) : EngineService(uGameViewportClient)
+	EngineService::EngineService(UGameEngine* uGameEngine, UFont* defaultFont) : EngineService(uGameEngine)
 	{
 		this->defaultFont = defaultFont;
 	}
 
-	UFont* EngineService::GetDefaultFont() const
+	UFont* EngineService::GetDefaultFont()
 	{
+		if(!defaultFont)
+		{
+			defaultFont = gameEngine->SmallFont;
+		}
 		return defaultFont;
 	}
 
 	UGameViewportClient* EngineService::GetGameViewportClient() const
 	{
-		return gameViewportClient;
+		if(gameEngine)
+		{
+			return gameEngine->GameViewport;
+		}
+		return nullptr;
 	}
 
+
+	UGameEngine* EngineService::GetGameEngine() const
+	{
+		return gameEngine;
+	}
 
 	UWorld* EngineService::GetWorld() const
 	{

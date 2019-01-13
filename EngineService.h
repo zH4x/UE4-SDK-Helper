@@ -7,15 +7,16 @@ namespace SDK
 	class EngineService
 	{
 	private:
-		UGameViewportClient* gameViewportClient = nullptr;
-		UFont * defaultFont = nullptr;
+		UGameEngine* gameEngine = nullptr;
+		UFont* defaultFont = nullptr;
 	public:
 		EngineService() = default;
-		EngineService(UGameViewportClient* uGameViewportClient);
-		EngineService(UGameViewportClient* uGameViewportClient, UFont * defaultFont);
+		EngineService(UGameEngine * uGameEngine);
+		EngineService(UGameEngine* uGameEngine, UFont * defaultFont);
 
+		UGameEngine* GetGameEngine() const;
 		UGameViewportClient* GetGameViewportClient() const;
-		UFont* GetDefaultFont() const;
+		UFont* GetDefaultFont();
 		UWorld* GetWorld() const;
 		const ULocalPlayer* GetLocalPlayer() const;
 		APlayerController* GetPlayerController() const;
