@@ -6,6 +6,9 @@ using namespace SDK;
 
 namespace SDK
 {
+	// https://www.rapidtables.com/web/color/
+	// https://andylangton.co.uk/tools/colour-converter
+
 	static const FLinearColor Transparent(0,0,0,0);
 
 	static const FLinearColor White(1.f,1.f,1.f,1.f);
@@ -13,7 +16,9 @@ namespace SDK
 	static const FLinearColor WhiteSmoke(.96f, .96f, .96f);
 	static const FLinearColor AliceBlue(.94f, .97f, .96f);
 
-	static const FLinearColor DarkGray(.66f, .66f, .66f);
+	static const FLinearColor DarkDarkGray(.13f, .13f, .13f);
+	static const FLinearColor DarkGray(.25f, .25f, .25f);
+	//static const FLinearColor DarkGray(.66f, .66f, .66f);
 	static const FLinearColor LightGray(.83f, .83f, .83f);
 	static const FLinearColor Gray(0.5f, 0.5f, 0.5f, 1.f);
 
