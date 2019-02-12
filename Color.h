@@ -52,6 +52,7 @@ namespace SDK
 	static const FLinearColor Fuchsia(1.f, .0f, 1.f);
 	static const FLinearColor MediumPurple(.58f, .44f, .86f);
 	static const FLinearColor Purple(.5f, .0f, 0.5f);
+	static const FLinearColor VeryDarkViolet(.10f, .0f, .20f);
 	static const FLinearColor DarkViolet(.58f, .0f, .83f);
 	static const FLinearColor Violet(.93f, .51f, .93f);
 
