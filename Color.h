@@ -8,6 +8,7 @@ namespace SDK
 {
 	// https://www.rapidtables.com/web/color/
 	// https://andylangton.co.uk/tools/colour-converter
+	// http://corecoding.com/utilities/rgb-or-hex-to-float.php
 
 	static const FLinearColor Transparent(0,0,0,0);
 
