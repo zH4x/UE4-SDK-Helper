@@ -11,8 +11,8 @@ namespace SDK
 		UFont* defaultFont = nullptr;
 	public:
 		EngineService() = default;
-		EngineService(UGameEngine * uGameEngine);
-		EngineService(UGameEngine* uGameEngine, UFont * defaultFont);
+		EngineService(UGameEngine* uGameEngine);
+		EngineService(UGameEngine* uGameEngine, UFont* defaultFont);
 
 		UGameEngine* GetGameEngine() const;
 		UGameViewportClient* GetGameViewportClient() const;

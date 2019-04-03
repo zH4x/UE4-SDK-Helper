@@ -2,15 +2,15 @@
 
 namespace SDK
 {
-	EngineService::EngineService(UGameEngine* uGameEngine) : EngineService()
+	EngineService::EngineService(UGameEngine* uGameEngine)
+		: EngineService(uGameEngine)
 	{
-		this->gameEngine = uGameEngine;
 	}
 
 
-	EngineService::EngineService(UGameEngine* uGameEngine, UFont* defaultFont) : EngineService(uGameEngine)
+	EngineService::EngineService(UGameEngine* uGameEngine, UFont* defaultFont)
+		: EngineService(uGameEngine, defaultFont)
 	{
-		this->defaultFont = defaultFont;
 	}
 
 	UFont* EngineService::GetDefaultFont()
