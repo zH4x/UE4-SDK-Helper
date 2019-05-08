@@ -50,6 +50,15 @@ namespace SDK
 		return nullptr;
 	}
 
+	const ACharacter* EngineService::GetMyPlayer() const
+	{
+		if (GetPlayerController() && GetPlayerController()->Pawn)
+		{
+			return static_cast<ACharacter*>(GetPlayerController()->Pawn);
+		}
+		return nullptr;
+	}
+
 	APlayerController* EngineService::GetPlayerController() const
 	{
 		if(GetLocalPlayer())

@@ -19,6 +19,7 @@ namespace SDK
 		UFont* GetDefaultFont();
 		UWorld* GetWorld() const;
 		const ULocalPlayer* GetLocalPlayer() const;
+		const ACharacter* GetMyPlayer() const;
 		APlayerController* GetPlayerController() const;
 	};
 }
