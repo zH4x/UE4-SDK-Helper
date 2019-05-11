@@ -38,7 +38,11 @@ namespace SDK
 
 	UWorld* EngineService::GetWorld() const
 	{
-		return GetGameViewportClient()->World;
+		if(GetGameViewportClient())
+		{
+			return GetGameViewportClient()->World;
+		}
+		return nullptr;
 	}
 
 	const ULocalPlayer* EngineService::GetLocalPlayer() const
