@@ -15,6 +15,7 @@ namespace SDK
 		EngineService(UGameEngine* uGameEngine, UFont* defaultFont);
 
 		UGameEngine* GetGameEngine() const;
+		AGameState* GetGameState() const;
 		UGameViewportClient* GetGameViewportClient() const;
 		UFont* GetDefaultFont();
 		UWorld* GetWorld() const;

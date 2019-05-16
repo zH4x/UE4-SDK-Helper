@@ -36,6 +36,15 @@ namespace SDK
 		return gameEngine;
 	}
 
+	AGameState* EngineService::GetGameState() const
+	{
+		if(GetWorld())
+		{
+			return GetWorld()->GameState;
+		}
+		return nullptr;
+	}
+
 	UWorld* EngineService::GetWorld() const
 	{
 		if(GetGameViewportClient())
