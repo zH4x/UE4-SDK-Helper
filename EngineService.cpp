@@ -80,4 +80,13 @@ namespace SDK
 		}
 		return nullptr;
 	}
+
+	APlayerCameraManager* EngineService::GetPlayerCameraManager() const
+	{
+		if(GetPlayerController())
+		{
+			return GetPlayerController()->PlayerCameraManager;
+		}
+		return nullptr;
+	}
 }

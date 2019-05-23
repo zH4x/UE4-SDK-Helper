@@ -22,6 +22,7 @@ namespace SDK
 		const ULocalPlayer* GetLocalPlayer() const;
 		const ACharacter* GetMyPlayer() const;
 		APlayerController* GetPlayerController() const;
+		APlayerCameraManager* GetPlayerCameraManager() const;
 	};
 }
 
