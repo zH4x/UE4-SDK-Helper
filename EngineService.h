@@ -21,8 +21,10 @@ namespace SDK
 		UWorld* GetWorld() const;
 		const ULocalPlayer* GetLocalPlayer() const;
 		const ACharacter* GetMyPlayer() const;
+		AHUD* GetMyHud();
 		APlayerController* GetPlayerController() const;
 		APlayerCameraManager* GetPlayerCameraManager() const;
+		APlayerState* GetPlayerState() const;
 	};
 }
 

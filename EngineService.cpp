@@ -72,6 +72,16 @@ namespace SDK
 		return nullptr;
 	}
 
+
+	AHUD* EngineService::GetMyHud()
+	{
+		if(GetPlayerController())
+		{
+			return GetPlayerController()->MyHUD;
+		}
+		return nullptr;
+	}
+
 	APlayerController* EngineService::GetPlayerController() const
 	{
 		if(GetLocalPlayer())
@@ -86,6 +96,16 @@ namespace SDK
 		if(GetPlayerController())
 		{
 			return GetPlayerController()->PlayerCameraManager;
+		}
+		return nullptr;
+	}
+
+
+	APlayerState* EngineService::GetPlayerState() const
+	{
+		if(GetPlayerController())
+		{
+			return GetPlayerController()->PlayerState;
 		}
 		return nullptr;
 	}
