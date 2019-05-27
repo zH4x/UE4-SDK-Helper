@@ -6,7 +6,7 @@ namespace SDK
 {
 	class EngineService
 	{
-	private:
+	protected:
 		UGameEngine* gameEngine = nullptr;
 		UFont* defaultFont = nullptr;
 	public:
@@ -14,17 +14,17 @@ namespace SDK
 		EngineService(UGameEngine* uGameEngine);
 		EngineService(UGameEngine* uGameEngine, UFont* defaultFont);
 
-		UGameEngine* GetGameEngine() const;
-		AGameState* GetGameState() const;
-		UGameViewportClient* GetGameViewportClient() const;
-		UFont* GetDefaultFont();
-		UWorld* GetWorld() const;
-		const ULocalPlayer* GetLocalPlayer() const;
-		const ACharacter* GetMyPlayer() const;
-		AHUD* GetMyHud();
-		APlayerController* GetPlayerController() const;
-		APlayerCameraManager* GetPlayerCameraManager() const;
-		APlayerState* GetPlayerState() const;
+		virtual UGameEngine* GetGameEngine() const;
+		virtual AGameState* GetGameState() const;
+		virtual UGameViewportClient* GetGameViewportClient() const;
+		virtual UFont* GetDefaultFont();
+		virtual UWorld* GetWorld() const;
+		virtual const ULocalPlayer* GetLocalPlayer() const;
+		virtual const ACharacter* GetMyPlayer() const;
+		virtual AHUD* GetHud();
+		virtual APlayerController* GetPlayerController() const;
+		virtual APlayerCameraManager* GetPlayerCameraManager() const;
+		virtual APlayerState* GetPlayerState() const;
 	};
 }
 

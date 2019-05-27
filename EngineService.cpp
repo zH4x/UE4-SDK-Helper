@@ -73,7 +73,7 @@ namespace SDK
 	}
 
 
-	AHUD* EngineService::GetMyHud()
+	AHUD* EngineService::GetHud()
 	{
 		if(GetPlayerController())
 		{
