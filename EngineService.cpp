@@ -54,7 +54,7 @@ namespace SDK
 		return nullptr;
 	}
 
-	const ULocalPlayer* EngineService::GetLocalPlayer() const
+	ULocalPlayer* EngineService::GetLocalPlayer() const
 	{
 		if(GetGameViewportClient() && GetGameViewportClient()->GameInstance && GetGameViewportClient()->GameInstance->LocalPlayers.Num() > 0)
 		{
@@ -63,7 +63,7 @@ namespace SDK
 		return nullptr;
 	}
 
-	const ACharacter* EngineService::GetMyPlayer() const
+	ACharacter* EngineService::GetMyPlayer() const
 	{
 		if (GetPlayerController() && GetPlayerController()->Pawn)
 		{
