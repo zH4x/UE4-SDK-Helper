@@ -21,6 +21,7 @@ namespace SDK
 		virtual UWorld* GetWorld() const;
 		virtual ULocalPlayer* GetLocalPlayer() const;
 		virtual ACharacter* GetMyPlayer() const;
+		virtual FVector GetMyPlayerVelocity();
 		virtual AHUD* GetHud();
 		virtual APlayerController* GetPlayerController() const;
 		virtual APlayerCameraManager* GetPlayerCameraManager() const;

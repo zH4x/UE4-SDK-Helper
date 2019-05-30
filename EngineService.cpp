@@ -72,6 +72,11 @@ namespace SDK
 		return nullptr;
 	}
 
+	FVector EngineService::GetMyPlayerVelocity()
+	{
+		return GetPlayerVelocity(GetMyPlayer());
+	}
+
 
 	AHUD* EngineService::GetHud()
 	{
@@ -112,9 +117,9 @@ namespace SDK
 
 	FVector EngineService::GetPlayerVelocity(ACharacter* player)
 	{
-		if(player && player->RootComponent)
+		if(player && player->CharacterMovement)
 		{
-			return player->RootComponent->ComponentVelocity;
+			return player->CharacterMovement->Velocity;
 		}
 		return  FVector();
 	}
