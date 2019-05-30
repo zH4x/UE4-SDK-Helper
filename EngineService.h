@@ -25,6 +25,7 @@ namespace SDK
 		virtual APlayerController* GetPlayerController() const;
 		virtual APlayerCameraManager* GetPlayerCameraManager() const;
 		virtual APlayerState* GetPlayerState() const;
+		virtual FVector GetPlayerVelocity(ACharacter* player);
 	};
 }
 

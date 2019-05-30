@@ -109,4 +109,13 @@ namespace SDK
 		}
 		return nullptr;
 	}
+
+	FVector EngineService::GetPlayerVelocity(ACharacter* player)
+	{
+		if(player && player->RootComponent)
+		{
+			return player->RootComponent->ComponentVelocity;
+		}
+		return  FVector();
+	}
 }
