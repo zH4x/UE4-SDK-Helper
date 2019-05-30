@@ -121,6 +121,6 @@ namespace SDK
 		{
 			return player->CharacterMovement->Velocity;
 		}
-		return  FVector();
+		return FVector();
 	}
 }
