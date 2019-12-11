@@ -19,6 +19,7 @@ namespace SDK
 		virtual UGameViewportClient* GetGameViewportClient() const;
 		virtual UFont* GetDefaultFont();
 		virtual UWorld* GetWorld() const;
+		virtual AWorldSettings* GetWorldSettings() const;
 		virtual ULocalPlayer* GetLocalPlayer() const;
 		virtual ACharacter* GetMyPlayer() const;
 		virtual FVector GetMyPlayerVelocity();

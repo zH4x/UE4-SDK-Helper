@@ -54,6 +54,15 @@ namespace SDK
 		return nullptr;
 	}
 
+	AWorldSettings* EngineService::GetWorldSettings() const
+	{
+		if (GetGameEngine()->WorldSettingsClass && GetGameEngine()->WorldSettingsClass->IsA(AWorldSettings::StaticClass()))
+		{
+			return reinterpret_cast<AWorldSettings*>(GetGameEngine()->WorldSettingsClass);
+		}
+		return nullptr;
+	}
+
 	ULocalPlayer* EngineService::GetLocalPlayer() const
 	{
 		if(GetGameViewportClient() && GetGameViewportClient()->GameInstance && GetGameViewportClient()->GameInstance->LocalPlayers.Num() > 0)
