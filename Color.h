@@ -72,6 +72,7 @@ namespace SDK
 	static const FLinearColor Brown(.65f, .16f, .16f);
 	static const FLinearColor SaddleBrown(.55f, .27f, .7f);
 	static const FLinearColor Chocolate(.82f, .41f, .12f);
+	static const FLinearColor ChocolateHalfTransparent(.82f, .41f, .12f, .5f);
 	static const FLinearColor SandyBrown(.96f, .64f, .38f);
 	static const FLinearColor Bisque(1.f, .89f, .77f);
 	
